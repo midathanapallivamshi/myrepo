@@ -27,8 +27,8 @@ pipeline {
     stage('push image to DockerHub'){
       steps {
          withDockerRegistry(credentialsId: 'docker-hub', url: 'https://index.docker.io/v1/') {
-         sh 'docker tag ramdev/dev:employee-service'
-         sh 'docker push ramdev/dev:employee-service'  
+         sh 'docker tag vamshi533/vamshik8s:employee-service'
+         sh 'docker push vamshi533/vamshik8s:employee-service'  
          }
       }
     }
